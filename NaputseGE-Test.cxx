@@ -25,30 +25,18 @@ int main()
 					// This if else statement sets exception rules
 					// in the loop specifically for the display of
 					// obstacles.
-					if ((v == plx[1])&&(n == plx[0]))
-						{
-							disp[v][n] = 'X';
-							v = v + 1;
-							cout << disp[v][n];
-						}
-					else if((v == plo[1])&&(n == plo[0]))
-						{
-							disp[v][n] = 'O';
-							v = v + 1;
-							cout << disp[v][n];
-						}
-					else if((v == plo2[1])&&(n == plo2[0]))
-						{
-							disp[v][n] = '^';
-							v = v + 1;
-							cout << disp[v][n];
-						}
-					else
-						{
-							disp[v][n] = '_';
-							cout << disp[v][n];
-							v = v + 1;
-						}
+					disp[v][n] = '_';
+					int q = plx[1];
+					int z = plx[0];
+					int r = plo[1];
+					int t = plo[0];
+					int l = plo2[1];
+					int k = plo2[0];
+					disp[q][z] = 'X';
+					disp[r][t] = 'O';
+					disp[l][k] = '^';
+					cout << disp[v][n];
+					v = v + 1;
 				}
 			cout << endl;
 		}
