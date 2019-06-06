@@ -29,10 +29,10 @@ func callArea() {
 }
 func main() {
 	var userInput int
-	fmt.Print("Length? : ")
+	fmt.Print("Length?: ")
 	fmt.Scan(&userInput)
 	xAxis = userInput
-	fmt.Print("Width? : ")
+	fmt.Print("Width?: ")
 	fmt.Scan(&userInput)
 	yAxis = userInput
 	fmt.Println(xAxis, yAxis)
